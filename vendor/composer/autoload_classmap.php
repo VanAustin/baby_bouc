@@ -16,6 +16,7 @@ return array(
     'AppBundle\\Entity\\Friend' => $baseDir . '/src/AppBundle/Entity/Friend.php',
     'AppBundle\\Entity\\Note' => $baseDir . '/src/AppBundle/Entity/Note.php',
     'AppBundle\\Entity\\User' => $baseDir . '/src/AppBundle/Entity/User.php',
+    'AppBundle\\Form\\RegistrationType' => $baseDir . '/src/AppBundle/Form/RegistrationType.php',
     'AppCache' => $baseDir . '/app/AppCache.php',
     'AppKernel' => $baseDir . '/app/AppKernel.php',
     'ArithmeticError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',

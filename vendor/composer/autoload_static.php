@@ -323,6 +323,7 @@ class ComposerStaticInit18828c9138046ef406572c63301a95ff
         'AppBundle\\Entity\\Friend' => __DIR__ . '/../..' . '/src/AppBundle/Entity/Friend.php',
         'AppBundle\\Entity\\Note' => __DIR__ . '/../..' . '/src/AppBundle/Entity/Note.php',
         'AppBundle\\Entity\\User' => __DIR__ . '/../..' . '/src/AppBundle/Entity/User.php',
+        'AppBundle\\Form\\RegistrationType' => __DIR__ . '/../..' . '/src/AppBundle/Form/RegistrationType.php',
         'AppCache' => __DIR__ . '/../..' . '/app/AppCache.php',
         'AppKernel' => __DIR__ . '/../..' . '/app/AppKernel.php',
         'ArithmeticError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
