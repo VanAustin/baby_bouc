@@ -7,6 +7,13 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
+      <header>
+        {% if is_granted('ROLE_USER')%}
+          <button><a href="{{ path('fos_user_security_logout') }}">Déconnexion</a></button>
+        {% else %}
+          <button><a href="{{ path('fos_user_security_login') }}">Connexion</a></button>
+        {% endif %}
+      </header>
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
