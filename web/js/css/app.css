@@ -1,0 +1,287 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Reset perso */
+a, del, ins {
+	text-decoration: none;
+}
+a {
+	color: inherit;
+}
+label, button {
+	cursor: pointer;
+}
+*, *::before, *::after {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+input, textarea, button {
+	outline: 0;
+}
+
+/*
+ * App
+ */
+#app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+#app-hello {
+  color: #111;
+  font-size: 4em;
+  font-weight: 700;
+}
+
+/*
+ * Classes
+ */
+.field {
+  position: relative;
+/*
+	 * Children
+	 */
+/*
+	 * Modifier
+	 */
+}
+.field-input {
+  display: block;
+  color: $color-input-value;
+  font-size: 1.2em;
+  height: 2.75em;
+  width: 100%;
+  margin: 0.4em 0;
+  padding: 0 1em;
+  border: 0;
+  border-bottom: solid 1px #ffd700;
+  -webkit-font-smoothing: antialiased;
+}
+.field-input::-webkit-input-placeholder {
+  color: $color-input-placeholder;
+}
+.field-input:-ms-input-placeholder {
+  color: $color-input-placeholder;
+}
+.field-input::placeholder {
+  color: $color-input-placeholder;
+}
+.field-input:invalid {
+  border-color: $color-input-required;
+}
+.field-label {
+  display: none;
+  color: $color-input-label;
+  position: absolute;
+  top: 0.8em;
+  left: 1.7em;
+  font-family: "Source Sans Pro";
+  text-transform: uppercase;
+  font-size: 0.75em;
+}
+.field--has-value .field-input {
+  padding-top: 0.85em;
+}
+.field--has-value .field-label {
+  display: block;
+  -webkit-animation: fadeInTop 0.2s;
+          animation: fadeInTop 0.2s;
+}
+.field--has-focus .field-input {
+  border-color: $color-input-border--focus;
+}
+.field--has-focus .field-label {
+  color: $color-input-label--focus;
+}
+@-webkit-keyframes fadeInTop {
+  0% {
+    -webkit-transform: translateY(1em);
+            transform: translateY(1em);
+    opacity: 0;
+  }
+}
+@keyframes fadeInTop {
+  0% {
+    -webkit-transform: translateY(1em);
+            transform: translateY(1em);
+    opacity: 0;
+  }
+}
+
+/*
+ * App
+ */
+#app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+#app-hello {
+  color: #444;
+  font-size: 4em;
+  font-weight: 700;
+  text-align: center;
+  margin: auto;
+}
+
+/*
+ * ID
+ */
+#form {
+  margin: 1em 0;
+}
+#form-submit {
+  background: $color-button-background;
+  border: 0;
+  border-radius: 0;
+  color: $color-button;
+  display: block;
+  font-family: "Source Sans Pro";
+  font-size: 1em;
+  text-transform: uppercase;
+  height: 3.3em;
+  width: 100%;
+/*
+		 * Modifier
+		 */
+}
+#form-submit.form-submit--login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#form-submit.form-submit--login::before {
+  content: "";
+  background: url("../images/cat.svg") no-repeat;
+  background-size: contain;
+  height: 1.5em;
+  width: 1.5em;
+  margin-right: 0.6em;
+}
+
+/*
+ * Classes
+ */
+.log-link {
+  color: $color-link;
+  cursor: pointer;
+  display: block;
+  font-size: 1.1em;
+  margin: 1em 0;
+  text-align: center;
+  text-decoration: underline;
+}
+.log-link--back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.log-link--back::before {
+  content: "";
+  background-size: contain;
+  width: 0.8em;
+  height: 0.8em;
+  margin-right: 0.25em;
+  -webkit-transform: rotate(0.5turn);
+          transform: rotate(0.5turn);
+}
+/*
+ * ID
+ */
+#log {
+  color: $color-text;
+  max-width: 360px;
+  margin: 5em auto 3em;
+}
+#log-title {
+  color: $color-title;
+  font-family: Cinzel;
+  font-size: 1.6em;
+  text-transform: lowercase;
+}
+#log-desc {
+  font-size: 1.1em;
+  line-height: 1.3;
+  margin: 0.25em 0;
+}
+#log-error {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1em;
+  text-align: center;
+  background: $color-input-required;
+  color: $color-button;
+  font-size: 1.2em;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+#log-error.app-error--show {
+  opacity: 1;
+}
+
+/*
+ * Colors
+ */
+
+
+/*# sourceMappingURL=app.css.map*/
