@@ -1,1 +1,16 @@
 e7ed5b,::1,GET,http://localhost/PROJET/TEST/baby_bouc/web/app_dev.php/,1507635692,,200
+e820f8,::1,GET,http://localhost/PROJET/TEST/baby_bouc/web/app_dev.php/,1507636041,,200
+4254a7,::1,GET,http://localhost/PROJET/TEST/baby_bouc/web/app_dev.php/login,1507636491,,200
+a48922,::1,POST,http://localhost/PROJET/TEST/baby_bouc/web/app_dev.php/login_check,1507636498,,302
+9de747,::1,GET,http://localhost/PROJET/TEST/baby_bouc/web/app_dev.php/login,1507636498,,200
+39e912,::1,GET,http://localhost/PROJET/TEST/baby_bouc/web/app_dev.php/,1507636577,,200
+829cb7,::1,GET,http://localhost/PROJET/TEST/baby_bouc/web/app_dev.php/register/,1507636579,,200
+37e848,::1,GET,http://localhost/PROJET/TEST/baby_bouc/web/app_dev.php/register/,1507636589,1c8e4e,200
+1c8e4e,::1,POST,http://localhost/PROJET/TEST/baby_bouc/web/app_dev.php/register/,1507636589,,500
+eccb20,::1,POST,http://localhost/PROJET/TEST/baby_bouc/web/app_dev.php/register/,1507636646,,302
+a81c62,::1,GET,http://localhost/PROJET/TEST/baby_bouc/web/app_dev.php/register/confirmed,1507636647,,200
+fd5bad,::1,GET,http://localhost/PROJET/TEST/baby_bouc/web/app_dev.php/logout,1507636650,,302
+ec4af6,::1,GET,http://localhost/PROJET/TEST/baby_bouc/web/app_dev.php/,1507636650,,200
+0d9b53,::1,GET,http://localhost/PROJET/TEST/baby_bouc/web/app_dev.php/login,1507636651,,200
+f500e7,::1,POST,http://localhost/PROJET/TEST/baby_bouc/web/app_dev.php/login_check,1507636655,,302
+0774bb,::1,GET,http://localhost/PROJET/TEST/baby_bouc/web/app_dev.php/,1507636655,,200

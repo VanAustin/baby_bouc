@@ -11,6 +11,7 @@
         {% if is_granted('ROLE_USER')%}
           <button><a href="{{ path('fos_user_security_logout') }}">Déconnexion</a></button>
         {% else %}
+          <button><a href="{{ path('fos_user_registration_register') }}">S'inscrire</a></button>
           <button><a href="{{ path('fos_user_security_login') }}">Connexion</a></button>
         {% endif %}
       </header>
